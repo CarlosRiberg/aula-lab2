@@ -15,6 +15,11 @@ public class Somatorio {
 		
 		double resultado = 0.0;
 		
+		if (valores == null) {
+			
+			resultado = Double.NaN;
+		}
+		
 		//Implementar
 		
 		return resultado;
