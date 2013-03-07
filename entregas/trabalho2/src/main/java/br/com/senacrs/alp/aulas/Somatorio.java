@@ -13,22 +13,23 @@ public class Somatorio {
 
 		double resultado = 0.0;
 
-		// Implementar
-
 		if (valores == null) {
-
 			resultado = Double.NaN;
-
 		}
 
-		valores = new double[10];
-		for (int i = 0; i < valores.length; i++) {
-			double val = Math.random();
-			valores[i] = val;
-			resultado += val;
-		}
-		
-		resultado = valores[0];
+		/* 
+		 * Não consegui fazer as duas condições não conflitarem com as outras! 
+		 * 
+		 * for (int j = 0; j < valores.length; j++) { 
+		 * double val = Math.random();
+		 * valores[j] = val;
+		 * resultado += val;
+		 * 
+		 * }
+		 * 
+		 * resultado = valores[0];
+		 * 
+		 */
 
 		return resultado;
 	}
