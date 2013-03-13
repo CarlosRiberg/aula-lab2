@@ -17,19 +17,25 @@ public class Somatorio {
 			resultado = Double.NaN;
 		}
 
-		/* 
-		 * Não consegui fazer as duas condições não conflitarem com as outras! 
-		 * 
-		 * for (int j = 0; j < valores.length; j++) { 
-		 * double val = Math.random();
-		 * valores[j] = val;
-		 * resultado += val;
-		 * 
-		 * }
-		 * 
-		 * resultado = valores[0];
-		 * 
-		 */
+		else {
+
+			for (int i = 0; i < valores.length; i++) {
+				resultado = valores[i] + resultado;
+			}
+
+			/*
+			 * Não consegui fazer as duas condições não conflitarem com as
+			 * outras!
+			 * 
+			 * for (int j = 0; j < valores.length; j++) { double val =
+			 * Math.random(); valores[j] = val; resultado += val;
+			 * 
+			 * }
+			 * 
+			 * resultado = valores[0];
+			 */
+
+		}
 
 		return resultado;
 	}
