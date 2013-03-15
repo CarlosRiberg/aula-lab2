@@ -19,4 +19,5 @@ public interface Lista<T extends Object> {
 	T removerPosicao(int posicao);
 	
 	void esvaziar();
+	//teste do git
 }
