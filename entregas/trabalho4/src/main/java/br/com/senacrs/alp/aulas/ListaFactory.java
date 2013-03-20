@@ -13,6 +13,8 @@ public class ListaFactory {
 		
 		//implementar
 		
+		resultado = new MinhaLista<T>();
+		
 		return resultado;
 	}
 	
