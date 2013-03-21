@@ -5,19 +5,19 @@ public class MinhaLista<T> implements Lista<T> {
 	@Override
 	public void adicionarFinal(T valor) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void adicionarInicio(T valor) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
 	public void adicionarPosicao(int posicao, T valor) {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 	@Override
@@ -53,7 +53,7 @@ public class MinhaLista<T> implements Lista<T> {
 	@Override
 	public void esvaziar() {
 		// TODO Auto-generated method stub
-		
+
 	}
 
 }
