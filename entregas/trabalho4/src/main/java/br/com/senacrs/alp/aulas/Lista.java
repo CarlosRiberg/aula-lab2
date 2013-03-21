@@ -9,15 +9,15 @@ public interface Lista<T extends Object> {
 	void adicionarPosicao(int posicao, T valor);
 
 	T obterPrimeiro();
-	
+
 	T obterUltimo();
-	
+
 	T obterPosicao(int posicao);
-	
+
 	int obterTamanho();
 
 	T removerPosicao(int posicao);
-	
+
 	void esvaziar();
-	// 
+	//
 }
