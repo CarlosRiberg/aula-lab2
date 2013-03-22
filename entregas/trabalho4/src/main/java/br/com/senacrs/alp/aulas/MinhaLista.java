@@ -7,13 +7,13 @@ public class MinhaLista<T> implements Lista<T> {
 	@Override
 	public void adicionarFinal(T valor) {
 		// TODO Auto-generated method stub
-
+		
 	}
 
 	@Override
 	public void adicionarInicio(T valor) {
 		// TODO Auto-generated method stub
-
+		
 	}
 
 	@Override
@@ -37,17 +37,23 @@ public class MinhaLista<T> implements Lista<T> {
 	@Override
 	public T obterPosicao(int posicao) {
 		// TODO Auto-generated method stub
+		Nodo<T> nodo = null;
+		nodo = obterPosicao (posicao);
 		return null;
+		
+		Nodo<T> nodo = inicio;
+		int indice = -1;
+		while (posicao != indice) {
+			inicio++
+		}
+	return nodo;
+		
+		
 	}
 
 	@Override
-	public int obterTamanho() {
-		int resultado = 0;
-		Nodo<T> nodo = null;
-		while (nodo.proximo != null) {
-			resultado++;
-		}
-		return resultado;
+	public int obterTamanho() { // TODO Auto-generated method stub
+		return 0;
 	}
 
 	@Override

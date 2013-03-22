@@ -13,7 +13,7 @@ public interface Lista<T extends Object> {
 	T obterUltimo();
 
 	T obterPosicao(int posicao);
-
+	
 	int obterTamanho();
 
 	T removerPosicao(int posicao);
