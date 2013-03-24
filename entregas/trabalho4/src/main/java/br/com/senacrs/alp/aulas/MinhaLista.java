@@ -1,9 +1,9 @@
 package br.com.senacrs.alp.aulas;
 
 public class MinhaLista<T> implements Lista<T> {
-	
+
 	// com base na logica do meu colega eu tentei fazer o trabalho 4
-	//desculpe por não ter me empenhado mais!
+	// desculpe por não ter me empenhado mais!
 
 	Nodo nodo = new Nodo();
 	Nodo nodoNovo = new Nodo();
@@ -13,7 +13,7 @@ public class MinhaLista<T> implements Lista<T> {
 	@Override
 	public void adicionarFinal(T valor) {
 		// TODO Auto-generated method stub
-		adicionarPosicao(obterTamanho(), valor);
+		adicionarPosicao((Integer) obterPosicao((Integer) null), valor);
 
 	}
 
@@ -53,8 +53,12 @@ public class MinhaLista<T> implements Lista<T> {
 	@Override
 	public T obterPosicao(int posicao) {
 		// TODO Auto-generated method stub
-		inicio = (Nodo<T>) obterPosicao(posicao);
-		return inicio.conteudo;
+		int indice = -1;
+		while (posicao != indice) {
+			nodo = nodo.proximo;
+		}
+
+		return (T) nodo.conteudo;
 
 	}
 
@@ -72,27 +76,22 @@ public class MinhaLista<T> implements Lista<T> {
 	@Override
 	public T removerPosicao(int posicao) {
 		// TODO Auto-generated method stub
-        nodoAnterior = (Nodo) obterPosicao(posicao -1);
-        nodoAnterior.proximo = posicao + 1;
-        nodo.proximo = (Nodo) null;
-        //T resultado = (T) nodo.conteudo;
-        //return resultado;
-        return (T) nodo.conteudo;
+
+		nodoAnterior.proximo = (Nodo) obterPosicao(posicao - 1);
+		nodoNovo = (Nodo) obterPosicao(posicao + 1);
+		nodoAnterior = nodoNovo;
+		nodo = nodoAnterior;
+		nodoNovo = (Nodo) obterPosicao(posicao);
+		nodoNovo.proximo = null;
+
+		return (T) nodo.conteudo;
 	}
 
 	@Override
 	public void esvaziar() {
 		// TODO Auto-generated method stub
-		
-		nodo.proximo = (Nodo) null;
-		
-		/*
-        int indice = obterTamanho();
-        while(indice != -1){
-            nodo.proximo = (Integer) null;
-            indice--;
-        }
-*/
+
+		inicio.proximo = null;
 
 	}
 
