@@ -11,7 +11,9 @@ public class PilhaFactory {
 		
 		Pilha<T> resultado = null;
 		
-		//implementar
+		//implementar dia 28/03
+		
+		
 		
 		return resultado;
 	}
