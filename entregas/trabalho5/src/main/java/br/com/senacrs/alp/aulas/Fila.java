@@ -4,13 +4,13 @@ public interface Fila<T extends Object> {
 
 	void insercao(T valor);
 
-	T obter();
+	T obter();// não remove, só consulta
 
-	T remocao();
+	T remocao(); // remove o ultimo
 	
-	boolean vazia();
+	boolean vazia(); // a fila esta vazia?
 
-	int tamanho();
+	int tamanho(); // quantidade de elementos
 	
-	void esvaziar();
+	void esvaziar(); // esvaziar fila
 }

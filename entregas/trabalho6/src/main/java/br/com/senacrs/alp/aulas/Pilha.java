@@ -2,15 +2,15 @@ package br.com.senacrs.alp.aulas;
 
 public interface Pilha<T extends Object> {
 
-	void insercao(T valor);
+	void insercao(T valor);// entrada
 	
-	T obter();
+	T obter();//entrada
 	
-	T remocao();
+	T remocao();//inicio
 	
-	boolean vazia();
+	boolean vazia();//esta vazia?
 
-	int tamanho();
+	int tamanho();// quantos elentos tem?
 	
-	void esvaziar();
+	void esvaziar();// esvaziar pilha
 }
