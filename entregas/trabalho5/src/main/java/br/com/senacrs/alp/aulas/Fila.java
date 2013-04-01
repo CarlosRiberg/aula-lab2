@@ -2,7 +2,7 @@ package br.com.senacrs.alp.aulas;
 
 public interface Fila<T extends Object> {
 
-	void insercao(T valor);
+	void insercao(T valor);// 
 
 	T obter();// não remove, só consulta
 
