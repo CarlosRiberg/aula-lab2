@@ -13,7 +13,7 @@ public class PilhaFactory {
 		
 		//implementar dia 28/03
 		
-		
+		resultado = new MinhaPilha<T>();
 		
 		return resultado;
 	}

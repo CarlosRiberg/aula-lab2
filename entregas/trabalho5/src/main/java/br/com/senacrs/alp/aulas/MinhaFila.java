@@ -6,12 +6,14 @@ public class MinhaFila<T> implements Fila<T> {
 
 	@Override
 	public void insercao(T valor) {
-		lista.adicionarPosicao(0,valor);
+		//lista.adicionarPosicao(0,valor);
+		lista.adicionarInicio(valor);
 	}
 
 	@Override
 	public T obter() {
 		return lista.obterPosicao(lista.obterTamanho());
+		
 	}
 
 	@Override
