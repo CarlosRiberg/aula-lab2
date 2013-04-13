@@ -12,8 +12,6 @@ public class ComparatorFactory {
 	public Comparator<Integer> criarComparatorParesAntesDeImparesCrescente() {
 		
 		Comparator<Integer> resultado = null;
-		
-		//implementar
 
 		resultado = new MinhaComparatorIntegre<Integer>();
 		
@@ -23,9 +21,7 @@ public class ComparatorFactory {
 	public Comparator<String> criarComparatorOrdemAlfabeticaReversa() {
 		
 		Comparator<String> resultado = null;
-		
-		//implementar
-		
+
 		resultado = new MinhaComparatorString<String>();
 		
 		return resultado;
