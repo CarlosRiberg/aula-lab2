@@ -13,7 +13,7 @@ public class Factory {
 		
 		//implementar
 		
-		
+		resultado = new MeuInterpretadorStrings();
 		
 		return resultado;
 	}

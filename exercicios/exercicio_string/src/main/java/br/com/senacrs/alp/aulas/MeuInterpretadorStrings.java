@@ -1,5 +1,7 @@
 package br.com.senacrs.alp.aulas;
 
+import java.io.File;
+
 public class MeuInterpretadorStrings implements InterpretadorStrings {
 
 	@Override

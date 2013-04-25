@@ -13,6 +13,8 @@ public class Factory {
 		
 		//implementar
 		
+		resultado = new MeuLeitorArquivos();
+		
 		return resultado;
 	}
 	

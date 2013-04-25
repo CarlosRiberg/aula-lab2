@@ -1,6 +1,8 @@
 package br.com.senacrs.alp.aulas;
 
-public class MinhaLeitorArquivos implements LeitorArquivos {
+import java.io.File;
+
+public class MeuLeitorArquivos implements LeitorArquivos{
 
 	@Override
 	public String[] lerArquivo(String arquivo) {
