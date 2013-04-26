@@ -11,6 +11,19 @@ public class MeuLeitorArquivos implements LeitorArquivos {
 		return null;
 	}
 
+	/*%d dacimal (int/long)
+	 *%f numeração com virgula (float/double) 
+	 *%s s - String 
+	 *%t time - Date 
+	 *%b - boolean
+	 *%% - para colocar percentual 
+	 * 
+	 * 
+	 * 
+	 * 
+	 */
+	
+	
 	@Override
 	public String[] lerArquivoComSubstituicao(String arquivo, String busca,
 			String substituicao) {
@@ -31,6 +44,8 @@ public class MeuLeitorArquivos implements LeitorArquivos {
 
 	private BufferedReader obterBufferedReader(String arquivo) {
 		// TODO Auto-generated method stub
+		
+		
 		return null;
 	}
 
