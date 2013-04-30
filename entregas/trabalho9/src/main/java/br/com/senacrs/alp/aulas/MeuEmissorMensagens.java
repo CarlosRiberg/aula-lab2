@@ -5,7 +5,13 @@ public class MeuEmissorMensagens implements EmissorMensagens {
 	@Override
 	public String formatarMensagem(String chave, Object... argumentos) {
 		// TODO Auto-generated method stub
-		return null;
+		
+		String resultado = null;
+		
+		resultado = new String().format(chave, argumentos);
+		
+		
+		return resultado;
 	}
 
 }
