@@ -4,11 +4,14 @@ public class Factory {
 	
 	private static final Factory instancia = new Factory();
 	
-	private Factory() {
+	Factory() {
+		
 	}
 	
 	public EmissorMensagens criarEmissor(String arquivoEntrada) {
 	
+		String arquivo = arquivoEntrada;
+		
 		EmissorMensagens resultado = null;
 		
 		//implementar
