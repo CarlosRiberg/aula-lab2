@@ -1,6 +1,5 @@
 package br.com.senacrs.alp.aulas;
 
-
 public class Factory {
 
 	private static final Factory instancia = new Factory();
@@ -11,21 +10,11 @@ public class Factory {
 
 	public EmissorMensagens criarEmissor(String arquivoEntrada) {
 
+
+
 		EmissorMensagens resultado = null;
-
-		if (arquivoEntrada == null || 
-				arquivoEntrada.indexOf("txt") == -1 || 
-					arquivoEntrada.indexOf("nao_existe") != -1 || 
-						arquivoEntrada.indexOf("mensagem_inexistente") != -1 || 
-							arquivoEntrada.indexOf("incorreto") != -1) {
-
-			throw new IllegalArgumentException();
-
-		}
-
-		// implementar
-
-		resultado = new MeuEmissorMensagens();
+		//recebe as informações do MeuEmissorMensagens e envia informações do arquivoEntrada
+		resultado = new MeuEmissorMensagens(arquivoEntrada);
 
 		return resultado;
 	}
