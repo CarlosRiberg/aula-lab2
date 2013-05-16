@@ -20,6 +20,7 @@ package br.com.senacrs.alp.aulas;
  */
 
 import java.io.File;
+import java.lang.reflect.Array;
 
 public class MinhaListaConteudoDiretorio implements ListaConteudoDiretorio {
 
@@ -32,12 +33,22 @@ public class MinhaListaConteudoDiretorio implements ListaConteudoDiretorio {
 		}
 		
 		File [] files = diretorio.listFiles();
+		Array.sort(files, new FilenameComparator());
 		String [] nomes = new String [files.length];
 		
 		for (int i = 0; i < nomes.length; i++) {
 			File f = files[i]; 
-			String resultado = "";
-			// +
+			String resultado = "" + (f.isDirectory()? ListaConteudoDiretorio.IDENTIFICA_DIRETORIO : ListaConteudoDiretorio.
+					+ ListaConteudoDiretorio.SEPARADOR
+					+(f.canRead()? ListaConteudoDiretorio.PERMISSAO_LEITURA : ListaConteudoDiretorio.)
+					+(f.canWrite()? ListaConteudoDiretorio.PERMISSAO_ESCRITA: ListaConteudoDiretorio.)
+					+(f.)
+					
+					
+					
+					
+					)
+				
 			
 
 
