@@ -26,7 +26,25 @@ public class MinhaListaConteudoDiretorio implements ListaConteudoDiretorio {
 	@Override
 	public String[] listarConteudo(File diretorio) {
 		// TODO Auto-generated method stub
-		return null;
+
+		if (diretorio == null || diretorio.exists()||diretorio.isDirectory()|| diretorio.canRead()) {
+			throw new IllegalArgumentException();
+		}
+		
+		File [] files = diretorio.listFiles();
+		String [] nomes = new String [files.length];
+		
+		for (int i = 0; i < nomes.length; i++) {
+			File f = files[i]; 
+			String resultado = "";
+			// +
+			
+
+
+		}
+		
+
+		return nomes;
 	}
 
 }
