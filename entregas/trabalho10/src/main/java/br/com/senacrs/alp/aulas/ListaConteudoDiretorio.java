@@ -2,9 +2,8 @@ package br.com.senacrs.alp.aulas;
 
 import java.io.File;
 
-
 public interface ListaConteudoDiretorio {
-	
+
 	public static final char PERMISSAO_LEITURA = 'r';
 	public static final char PERMISSAO_ESCRITA = 'w';
 	public static final char PERMISSAO_EXECUCAO = 'x';

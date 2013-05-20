@@ -11,9 +11,7 @@ public class Factory {
 
 		ListaConteudoDiretorio resultado = null;
 
-		resultado = new MinhaListaConteudoDiretorio();
-
-		// implementar
+		resultado = new MinhaLista();
 
 		return resultado;
 	}
