@@ -10,6 +10,8 @@ import java.util.Map;
 
 public class MeuArquivo implements ArquivoConfiguracao {
 
+	//Copiado
+	
 	private String arquivoEntrada = null;
 	private Map<String, String> mpler = new HashMap<String, String>();
 
