@@ -13,7 +13,7 @@ public class Factory {
 		
 		//implementar
 		
-		return resultado;
+		return resultado = new MeuValidarRequisicaoGet();
 	}
 	
 	public static Factory getInstancia() {
