@@ -13,7 +13,7 @@ public class Factory {
 		
 		//implementar
 		
-		return resultado;
+		return resultado = new MeuObterPathRequisicaoGet();
 	}
 	
 	public static Factory getInstancia() {
