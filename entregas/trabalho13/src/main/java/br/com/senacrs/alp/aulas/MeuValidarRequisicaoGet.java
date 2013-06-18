@@ -11,55 +11,30 @@ public class MeuValidarRequisicaoGet implements ValidarRequisicaoGet {
 
 	@Override
 	public boolean ehRequisicaoGetValida(Reader requisicao) {
-
-		String[] linhas = new String[2];
+		boolean resultado = false;
 
 		if (requisicao == null) {
 			throw new IllegalArgumentException();
 		}
 
-		boolean resultado = false;
+		BufferedReader br = new BufferedReader(requisicao);
 
-		linhas = lerReader(requisicao);
-
-		if (linhas[0] == null) {
-			resultado = false;
-		} else if (linhas[1] == null) {
-			resultado = false;
-		} else if (linhas[0].equals(GET) && linhas[1].equals(HOST)) {
-			resultado = true;
-		}
-
-		return resultado;
-	}
-
-	private String[] lerReader(Reader requisicao) {
-
-		String[] resultado = new String[2];
-		BufferedReader buff = new BufferedReader(requisicao);
+		String linha;
 
 		try {
+			while ((linha = br.readLine()) != null) {
+				String arry[] = linha.split(" ");
 
-			resultado[0] = buff.readLine();
-			resultado[1] = buff.readLine();
-
+				if (arry.equals(GET) && arry.equals(HOST)) {
+					resultado = true;
+				}
+			}
 		} catch (IOException e) {
-			throw new IllegalArgumentException(e);
+			// TODO Auto-generated catch block
+			e.printStackTrace();
 		}
 
 		return resultado;
+
 	}
-	
-	/*
-	 * package br.com.senacrs.alp.aulas;
-	 * 
-	 * import java.io.Reader;
-	 * 
-	 * public class MeuValidarRequisicaoGet implements ValidarRequisicaoGet {
-	 * 
-	 * @Override public boolean ehRequisicaoGetValida(Reader requisicao) { //
-	 * TODO Auto-generated method stub return false; }
-	 * 
-	 * }
-	 */
 }
